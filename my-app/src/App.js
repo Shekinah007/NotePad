@@ -29,6 +29,13 @@ function App() {
             <EditNote />
           </Route>
         </Switch>
+        {/* <a target="_blank" href="https://icons8.com/icon/IA4hgI5aWiHD/add">
+          Add
+        </a>
+        icon by
+        <a target="_blank" href="https://icons8.com">
+          Icons8
+        </a> */}
       </div>
     </Router>
   );

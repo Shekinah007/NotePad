@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useParams, useHistory } from "react-router";
 import { allNotes, addNote, deleteNote } from "../reducers/notesSlice";
 import { useState } from "react";
+import BackArrow from "../images/arrow_back_black_48dp.svg";
 
 const EditNote = () => {
   const { id } = useParams();
@@ -45,7 +46,10 @@ const EditNote = () => {
           onChange={(e) => setContent(e.target.value)}
         />
       </form>
-      <button onClick={handleSave}>Save</button>
+      <br />
+      <button onClick={handleSave}>
+        <img src={BackArrow}></img>
+      </button>
     </div>
   );
 };

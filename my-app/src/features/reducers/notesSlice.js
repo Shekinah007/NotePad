@@ -26,7 +26,7 @@ const notesSlice = createSlice({
   reducers: {
     addNote: {
       reducer(state, action) {
-        state.push(action.payload);
+        state.unshift(action.payload);
       },
       prepare(title, content) {
         return {

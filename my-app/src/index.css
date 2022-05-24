@@ -58,13 +58,17 @@ input, textarea {
   border-radius: 8px;
   border: none;
   font-family: cursive;
+  font-size: 2.rem;
 }
 input{
   padding: 10px;
-  font-weight: 800;
   font-family: cursive;
+  font-weight: 800;
+  color: brown;
+  text-align: center;
 }
 textarea {
+  font-weight: 400;
   height: 60vh;
   padding: 10px;
   resize: none;
@@ -96,4 +100,43 @@ textarea {
   font-style: italic;
   font-family: cursive;
   font-size: 10px;
+}
+
+.addNoteButton {
+  color: red;
+  border-radius: 50%;
+  box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.88); 
+  box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.88);
+  position: absolute;
+  bottom: 10vh;
+  right: 10vw;
+  width: 10vmax;
+  transition: .5s;
+}
+.addNoteButton:hover, .addNoteButton:active {
+  box-shadow: none;
+}
+.clockAndCalendar {
+  width: 1.5vmax;
+}
+button {
+  background: none; 
+  /* border: none; */
+  border-radius: 10px;
+  transition: 0.5s;
+}
+button:hover {
+  border-radius: 50%;
+  color: red;
+}
+.deleteButton {
+  /* background-color: blue; */
+  transition: 0.2s;
+  width: 3vmax;
+  
+}
+.deleteButton:hover, .deleteButton:active{
+
+  box-shadow: 0px 0px 7px -3px rgba(0,0,0,0.88); 
+  box-shadow: 0px 0px 7px -3px rgba(0,0,0,0.88);
 }
