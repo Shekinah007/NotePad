@@ -10,17 +10,30 @@ const Home = () => {
   //   const notes = useSelector((state) => state.notes);
   const notes = useSelector(allNotes);
   console.log(notes);
+  const date = new Date();
+  const [month, day, year] = [
+    date.getMonth(),
+    date.getDate(),
+    date.getFullYear(),
+  ];
+  const [hour, minutes, seconds] = [
+    date.getHours(),
+    date.getMinutes(),
+    date.getSeconds(),
+  ];
 
+  console.log(day, month, year, hour, minutes);
   //   const handleDelete = () => {
   //     dispatch(deleteNote(note.id));
   //   };
 
   const noteList = notes.map((note) => (
-    <article className="notePreview">
-      <Link to={`/editNote/${note.id}`} key={note.id}>
-        <h2>{note.title}</h2>
-        <p>{note.content}</p>
+    <article className="notePreview" key={note.id}>
+      <Link to={`/editNote/${note.id}`}>
+        <h3>{note.title}</h3>
+        {/* <p>{note.content}</p> */}
       </Link>
+      <hr />
       <button
         onClick={() => {
           dispatch(deleteNote(note.id));
@@ -28,12 +41,20 @@ const Home = () => {
       >
         Delete
       </button>
+      <br />
+      <div className="dateAndTime">
+        Date: {note.date}
+        <br />
+        Time: {note.time}
+      </div>
     </article>
   ));
 
   return (
     <div>
-      <Link to="/createNote">New Note</Link>
+      <Link to="/createNote" className="newNoteButton">
+        New Note
+      </Link>
       {noteList}
     </div>
   );

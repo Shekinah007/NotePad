@@ -60,6 +60,7 @@ input, textarea {
 input{
   padding: 10px;
   font-weight: 800;
+  font-family: cursive;
 }
 textarea {
   height: 60vh;
@@ -77,6 +78,17 @@ textarea {
   box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.88); 
   box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.88);
 }
-.notePreview h2 {
+.notePreview h3 {
   color: brown;
+}
+
+.notePreview a {
+  text-decoration: none;
+  color: black;
+}
+.dateAndTime {
+  color: green;
+  font-style: italic;
+  font-family: cursive;
+  font-size: 10px;
 }
