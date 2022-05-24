@@ -25,6 +25,7 @@ const EditNote = () => {
     // e.preventDefault();
     dispatch(deleteNote(id));
     dispatch(addNote(title, content));
+    localStorage.setItem("Notes", JSON.stringify(notes));
     history.push("/");
   };
   return (

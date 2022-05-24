@@ -1,19 +1,4 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
-import { useSelector } from "react-redux";
-
-const date = new Date();
-const [month, day, year] = [
-  date.getMonth(),
-  date.getDate(),
-  date.getFullYear(),
-];
-const [hour, minutes, seconds] = [
-  date.getHours(),
-  date.getMinutes(),
-  date.getSeconds(),
-];
-
-console.log(day, month, year, hour, minutes);
 
 const initialState = [
   {
@@ -28,9 +13,9 @@ const initialState = [
       new Date().getFullYear(),
     time:
       new Date().getHours() +
-      "-" +
-      date.getMinutes() +
-      "-" +
+      ":" +
+      new Date().getMinutes() +
+      ":" +
       new Date().getSeconds(),
   },
 ];
@@ -57,9 +42,9 @@ const notesSlice = createSlice({
               new Date().getFullYear(),
             time:
               new Date().getHours() +
-              "-" +
+              ":" +
               new Date().getMinutes() +
-              "-" +
+              ":" +
               new Date().getSeconds(),
           },
         };

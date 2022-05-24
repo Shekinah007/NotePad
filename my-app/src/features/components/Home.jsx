@@ -30,10 +30,15 @@ const Home = () => {
   const noteList = notes.map((note) => (
     <article className="notePreview" key={note.id}>
       <Link to={`/editNote/${note.id}`}>
+        <div className="dateAndTime">
+          Date: {note.date}
+          <br />
+          Time: {note.time}
+        </div>
         <h3>{note.title}</h3>
-        {/* <p>{note.content}</p> */}
+
+        <hr />
       </Link>
-      <hr />
       <button
         onClick={() => {
           dispatch(deleteNote(note.id));
@@ -42,11 +47,6 @@ const Home = () => {
         Delete
       </button>
       <br />
-      <div className="dateAndTime">
-        Date: {note.date}
-        <br />
-        Time: {note.time}
-      </div>
     </article>
   ));
 

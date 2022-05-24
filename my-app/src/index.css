@@ -49,6 +49,8 @@ form {
   justify-content: center;
   border-radius: 10px;
   background-color: ivory;
+  box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.88); 
+  box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.88);
 }
 
 input, textarea {
@@ -65,6 +67,7 @@ input{
 textarea {
   height: 60vh;
   padding: 10px;
+  resize: none;
 }
 
 .notePreview {
@@ -80,6 +83,7 @@ textarea {
 }
 .notePreview h3 {
   color: brown;
+  margin: 0;
 }
 
 .notePreview a {
@@ -87,6 +91,7 @@ textarea {
   color: black;
 }
 .dateAndTime {
+  /* margin-left: 90%; */
   color: green;
   font-style: italic;
   font-family: cursive;
