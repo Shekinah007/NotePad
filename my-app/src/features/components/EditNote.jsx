@@ -30,7 +30,7 @@ const EditNote = () => {
     history.push("/NotePad");
   };
   return (
-    <div className="EditNote">
+    <div className="Note">
       <form>
         <label htmlFor={title}></label>
         <input
