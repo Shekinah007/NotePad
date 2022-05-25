@@ -61,7 +61,8 @@ const Home = () => {
   ));
 
   return (
-    <div>
+    <div className="Home">
+      <Navbar />
       <Link to="/createNote" className="newNoteButton">
         <img className="addNoteButton" src={Plus}></img>
       </Link>

@@ -27,7 +27,7 @@ const EditNote = () => {
     dispatch(deleteNote(id));
     dispatch(addNote(title, content));
     localStorage.setItem("Notes", JSON.stringify(notes));
-    history.push("/");
+    history.push("/NotePad");
   };
   return (
     <div className="EditNote">
@@ -36,7 +36,7 @@ const EditNote = () => {
         <input
           type="text"
           value={title}
-          placeholder="Title/Header"
+          placeholder="Title"
           onChange={(e) => setTitle(e.target.value)}
         />
         <label htmlFor="content"></label>
@@ -47,9 +47,7 @@ const EditNote = () => {
         />
       </form>
       <br />
-      <button onClick={handleSave}>
-        <img src={BackArrow}></img>
-      </button>
+      <img onClick={handleSave} className="backButton" src={BackArrow} />
     </div>
   );
 };

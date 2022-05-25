@@ -17,7 +17,7 @@ const Note = () => {
     e.preventDefault();
     dispatch(addNote(title, content));
     localStorage.setItem("Notes", JSON.stringify(notes));
-    history.push("/");
+    history.push("/NotePad");
   };
 
   return (
@@ -27,7 +27,7 @@ const Note = () => {
         <input
           type="text"
           value={title}
-          placeholder="Title/Header"
+          placeholder="Title"
           onChange={(e) => setTitle(e.target.value)}
         />
         <label htmlFor="content"></label>
@@ -37,10 +37,7 @@ const Note = () => {
           onChange={(e) => setContent(e.target.value)}
         />
       </form>
-      <br />
-      <button onClick={handleSave}>
-        <img src={BackArrow} />
-      </button>
+      <img onClick={handleSave} className="backButton" src={BackArrow} />
     </div>
   );
 };

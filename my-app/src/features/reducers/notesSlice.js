@@ -11,12 +11,7 @@ const initialState = [
       new Date().getMonth() +
       "-" +
       new Date().getFullYear(),
-    time:
-      new Date().getHours() +
-      ":" +
-      new Date().getMinutes() +
-      ":" +
-      new Date().getSeconds(),
+    time: new Date().getHours() + ":" + new Date().getMinutes(),
   },
 ];
 
@@ -40,12 +35,7 @@ const notesSlice = createSlice({
               new Date().getMonth() +
               "-" +
               new Date().getFullYear(),
-            time:
-              new Date().getHours() +
-              ":" +
-              new Date().getMinutes() +
-              ":" +
-              new Date().getSeconds(),
+            time: new Date().getHours() + ":" + new Date().getMinutes(),
           },
         };
       },
