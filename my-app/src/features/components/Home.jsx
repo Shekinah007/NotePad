@@ -24,9 +24,15 @@ const Home = () => {
     <article className="notePreview" key={note.id}>
       <Link to={`/editNote/${note.id}`}>
         <div className="dateAndTime">
-          <img className="clockAndCalendar" src={Calendar}></img> {note.date}
-          <br />
-          <img className="clockAndCalendar" src={Clock}></img> {note.time}
+          <span className="imageAndDate">
+            <img className="clockAndCalendar" src={Calendar}></img>
+            <span>{note.date}</span>
+          </span>
+
+          <span className="imageAndDate">
+            <img className="clockAndCalendar" src={Clock}></img>
+            <span> {note.time}</span>
+          </span>
         </div>
         <h3>{note.title}</h3>
 

@@ -84,6 +84,17 @@ textarea {
   border-radius: 10px;
   box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.88); 
   box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.88);
+  animation: fadeInBottom 0.5s;
+}
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
 }
 .notePreview h3 {
   color: brown;
@@ -101,13 +112,17 @@ textarea {
   font-family: cursive;
   font-size: 10px;
 }
+.imageAndDate {
+  display: flex;
+  align-items: center;
+}
 
 .addNoteButton {
   color: red;
   border-radius: 50%;
   box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.88); 
   box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.88);
-  position: absolute;
+  position: fixed;
   bottom: 10vh;
   right: 10vw;
   width: 10vmax;
@@ -130,13 +145,13 @@ button:hover {
   color: red;
 }
 .deleteButton {
-  /* background-color: blue; */
-  transition: 0.2s;
+  transition: 0.5s;
   width: 3vmax;
-  
 }
 .deleteButton:hover, .deleteButton:active{
-
+  background-color: coral;
+  border-radius: 30%;
   box-shadow: 0px 0px 7px -3px rgba(0,0,0,0.88); 
   box-shadow: 0px 0px 7px -3px rgba(0,0,0,0.88);
 }
+
