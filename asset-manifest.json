@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/NotePad/static/css/main.8e1020e4.css",
-    "main.js": "/NotePad/static/js/main.df1bb258.js",
+    "main.css": "/NotePad/static/css/main.24a9b383.css",
+    "main.js": "/NotePad/static/js/main.2e9080f2.js",
     "static/js/787.28cb0dcd.chunk.js": "/NotePad/static/js/787.28cb0dcd.chunk.js",
     "static/media/pexels-sasha-martynov-1260727.jpg": "/NotePad/static/media/pexels-sasha-martynov-1260727.11c4670af33193fd3094.jpg",
     "static/media/logo.svg": "/NotePad/static/media/logo.b2e5a01e505f739f1484b881277d5186.svg",
@@ -11,12 +11,12 @@
     "static/media/schedule_black_24dp.svg": "/NotePad/static/media/schedule_black_24dp.a4b551fe2d4116d8593bc203c24c6122.svg",
     "static/media/delete_black_24dp.svg": "/NotePad/static/media/delete_black_24dp.1129c53a10f3c716357028ea030e9d23.svg",
     "static/media/arrow_back_black_48dp.svg": "/NotePad/static/media/arrow_back_black_48dp.5aefa7ce94077cb7fd0af3ec37dc4fe4.svg",
-    "main.8e1020e4.css.map": "/NotePad/static/css/main.8e1020e4.css.map",
-    "main.df1bb258.js.map": "/NotePad/static/js/main.df1bb258.js.map",
+    "main.24a9b383.css.map": "/NotePad/static/css/main.24a9b383.css.map",
+    "main.2e9080f2.js.map": "/NotePad/static/js/main.2e9080f2.js.map",
     "787.28cb0dcd.chunk.js.map": "/NotePad/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e1020e4.css",
-    "static/js/main.df1bb258.js"
+    "static/css/main.24a9b383.css",
+    "static/js/main.2e9080f2.js"
   ]
 }
